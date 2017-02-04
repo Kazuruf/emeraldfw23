@@ -5,7 +5,7 @@ require 'emeraldfw/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "emeraldfw"
-  spec.version       = Emeraldfw23::VERSION
+  spec.version       = EmeraldFW::VERSION
   spec.authors       = ["Ed de Almeida"]
   spec.email         = ["edvaldoajunior@gmail.com"]
 

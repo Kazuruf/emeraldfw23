@@ -1,5 +1,5 @@
-require "emeraldfw23/version"
+require "emeraldfw/version"
 
-module Emeraldfw23
-  # Your code goes here...
+module EmeraldFW
+
 end

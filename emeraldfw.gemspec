@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'emeraldfw23/version'
+require 'emeraldfw/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "emeraldfw23"
+  spec.name          = "emeraldfw"
   spec.version       = Emeraldfw23::VERSION
   spec.authors       = ["Ed de Almeida"]
   spec.email         = ["edvaldoajunior@gmail.com"]

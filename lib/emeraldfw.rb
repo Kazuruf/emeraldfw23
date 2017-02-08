@@ -2,6 +2,7 @@ require "emeraldfw/cli"
 require "emeraldfw/version"
 
 require "entities/component"
+require "entities/page"
 
 module EmeraldFW
 

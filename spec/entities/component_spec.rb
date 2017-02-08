@@ -5,10 +5,6 @@ RSpec.describe EmeraldFW::Component do
   context 'EmeraldFW::Component configuration' do
   
     context 'EmeraldFW::Component contants' do 
-
-      it 'EmeraldFW has a version number' do
-        expect(EmeraldFW::VERSION).not_to be nil
-      end
 	
 	end 
   

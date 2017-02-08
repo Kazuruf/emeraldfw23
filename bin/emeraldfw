@@ -17,9 +17,6 @@ opts = Slop.parse do |o|
   o.string  '-d', '--database',  'Sets the database for the project',                  default: 'postgresql'
   o.string  '-a', '--archetype', 'Sets the database for the project',                  default: 'generic'
 
-  # Parameters for Template
-  o.string  '-j', '--jslibs',    'JavaScript|CSS libraries to be added to a template', default: 'jquery:bootstrap'
-
   # Parameters for Page
   o.string  '-T', '--template',  'JavaScript|CSS libraries to be added to a template', default: 'default'
 

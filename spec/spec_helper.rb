@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "emeraldfw23"
+require "emeraldfw"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

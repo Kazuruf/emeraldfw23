@@ -2,7 +2,7 @@ require "spec_helper"
 
 RSpec.describe EmeraldFW::Component do
 
-  context 'EmeraldFW::Componentconfiguration' do
+  context 'EmeraldFW::Component configuration' do
   
     context 'EmeraldFW::Component contants' do 
 

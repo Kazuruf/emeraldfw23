@@ -4,7 +4,7 @@ RSpec.describe EmeraldFW do
 
   context 'EmeraldFW configuration' do
   
-    context 'EmeraldFW contants' do 
+    context 'Constants' do 
 
       it 'EmeraldFW has a version number' do
         expect(EmeraldFW::VERSION).not_to be nil
@@ -12,20 +12,20 @@ RSpec.describe EmeraldFW do
 	
 	end 
   
-    context 'EmeraldFW modules' do
+    context 'Modules' do
 	
       it 'EmeraldFW has a submodule CLI' do 
 	    expect(EmeraldFW::CLI).not_to be nil
 	  end
-	
-      it 'EmeraldFW has a submodule Component' do 
-	    expect(EmeraldFW::Component).not_to be nil
-	  end
 	  
-      it 'EmeraldFW has a submodule Page' do 
-	    expect(EmeraldFW::Page).not_to be nil
+	end
+
+	context 'Methods' do
+
+	  it 'EmeraldFW responds to emerald_name' do
+	  	expect(EmeraldFW.respond_to?(:emerald_name)).to be true
 	  end
-	  
+
 	end
   
   end

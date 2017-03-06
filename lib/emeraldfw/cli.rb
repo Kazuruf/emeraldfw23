@@ -6,7 +6,6 @@ module EmeraldFW
   	  raise ArgumentError.new("Invalid entity: #{entity}") unless valid_entity?
   	  raise ArgumentError.new("Invalid command: #{command}") unless valid_command?
   	  @opts = sane_options
-
   	end
 
   	def entity

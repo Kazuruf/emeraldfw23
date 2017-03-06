@@ -9,7 +9,10 @@ module EmeraldFW
   VALID_COMMANDS = [:create, :remove].freeze
 
   VALID_OPTIONS = {
-
+  	:component => [].freeze,
+  	:page      => [].freeze,
+  	:project   => [:language, :test, :database, :archetype].freeze,
+  	:resource  => [:rlibrary]
   }
 
 end

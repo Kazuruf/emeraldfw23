@@ -2,10 +2,12 @@ module EmeraldFW
   class CLI
 
   	def initialize(args,opts)
-  	  @args = args
-  	  raise ArgumentError.new("Invalid entity: #{entity}") unless valid_entity?
-  	  raise ArgumentError.new("Invalid command: #{command}") unless valid_command?
-  	  @opts = sane_options
+      @args = args
+      @opts = sane_options(opts)
+      raise ArgumentError.new("First parameter is meant to be an array") unless args.is_a? Array
+      raise ArgumentError.new("Invalid entity: #{entity}") unless valid_entity?
+      raise ArgumentError.new("Invalid command: #{command}") unless valid_command?
+  	  raise ArgumentError.new("Second parameter is meant to be a hash") unless args.is_a? Hash
   	end
 
   	def entity
@@ -24,8 +26,12 @@ module EmeraldFW
   	  EmeraldFW::VALID_COMMANDS.include?(command)
   	end
 
-  	def sane_options
-  	  
+    def valid_options
+      
+    end
+
+  	def sane_options(opts)
+  	  opts
   	end
 
   end

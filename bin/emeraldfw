@@ -15,14 +15,7 @@ opts = Slop.parse do |o|
   o.string  '-l', '--language',  'Sets the language for the project',                  default: 'ruby'
   o.string  '-t', '--test',      'Sets the test framework for the project',            default: 'rspec'
   o.string  '-d', '--database',  'Sets the database for the project',                  default: 'postgresql'
-  o.string  '-a', '--archetype', 'Sets the database for the project',                  default: 'generic'
-
-  # Parameters for Page
-  o.string  '-T', '--template',  'JavaScript|CSS libraries to be added to a template', default: 'default'
-
-  # Parameters for Component
-  o.boolean '-R', '--remote',    'Remote component',                                   default: false
-  o.boolean '-D', '--dynamic',   'Dynamic component',                                  default: false
+  o.string  '-a', '--archetype', 'Sets the archetype for the project',                 default: 'generic'
 
   # Parameters for Form
   o.string '-f', '--fields',     'Fields to add to a form',                            default: nil
@@ -34,4 +27,4 @@ end
 
 arguments = opts.arguments
 
-EmeraldFW::CLI.new.start(arguments,opts.to_hash)
+EmeraldFW::CLI.new(arguments,opts.to_hash)
